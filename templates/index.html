@@ -1,0 +1,24 @@
+{%extends "layout.html" %}
+    {%block body%}
+    <hr>
+    <h3>Anasayfa</h3>
+    <hr>
+    <div class="jumbotron text-center">
+        <h1>Misyonumuz</h1>
+        <p>Kendini sürekli yenileyen, okuyan, inceleyen, araştıran, analiz ve 
+            sentezler yapabilen gençlerin yetiştiği; bütün öğrencilerimizin, 
+            akla ve bilime dayalı eğitim ortamında hayata ve bir üst öğrenime 
+            hazırlandığı; dünü, bugüne; bugünü yarına bağlayan köprülerin 
+            kurulduğu; yönetici, öğretmen, personel, öğrenci ve velilerimizin 
+            işbirliğiyle ilçemiz ve Türkiye genelinde 
+            Başarılı ve Örnek Okul olmaktır.</p>  
+    </div>
+    <ul>
+        {%for article in articles %}
+            <li> Article id = {{article.id}}  <br> Başlık = {{article.title}} <br>  İçerik = {{article.content}} </li>
+        {%endfor%}
+    </ul>
+    
+    {%endblock %}
+
+
